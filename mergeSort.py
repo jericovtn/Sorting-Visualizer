@@ -22,14 +22,26 @@ def mergeSort(numberList, left, right):
     mid = (left + right) // 2
 
     # // Animations
-    plt.bar(list(range(20)))
+    plt.bar(list(range(amount)), numberList)
+    plt.pause(0.01)
+    plt.clf()
 
     # spilt recursively into left and right values
     mergeSort(numberList, left, mid)
     mergeSort(numberList, mid + 1, right)
 
+    # // Animations
+    plt.bar(list(range(amount)), numberList)
+    plt.pause(0.01)
+    plt.clf()
+
     # merge the two results
     merge(numberList, left, right, mid)
+
+    # // Animations
+    plt.bar(list(range(amount)), numberList)
+    plt.pause(0.01)
+    plt.clf()
 
 def merge(numberList, left, right, mid):
     
