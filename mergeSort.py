@@ -8,7 +8,7 @@ import random
 
 random.seed('ABC')
 
-amount = 10
+amount = 20
 
 numbers = [random.randint(0, 100) for _ in range(amount)]
 
