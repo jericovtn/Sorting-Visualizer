@@ -76,7 +76,9 @@ def merge(numberList, left, right, mid):
         rightCounter += 1
         sortedCounter += 1
 
-print(numbers)    
-print(sorted(numbers))
 mergeSort(numbers, 0, len(numbers)-1)
 print(numbers)
+
+# // Animations
+plt.bar(list(range(amount)), numbers)
+plt.show()
