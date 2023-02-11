@@ -10,7 +10,7 @@ random.seed('ABC')
 
 amount = 20
 
-numbers = [random.randint(0, 1000) for _ in range(amount)]
+numbers = [random.randint(0, 100) for _ in range(amount)]
 
 def mergeSort(numberList, left, right):
     
