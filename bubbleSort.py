@@ -1,5 +1,5 @@
 # Name: Jerico James F. Viteño
-# Final Project: Sorting Visualizer in Bubble Sort
+# Final Project: Sorting Visualizer on a Bubble Sort
 # February 18, 2023 
 
 import matplotlib.pyplot as plt
