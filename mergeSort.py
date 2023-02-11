@@ -8,7 +8,9 @@ import random
 
 random.seed('ABC')
 
-numbers = [random.randint(0, 100) for _ in range(10)]
+amount = 10
+
+numbers = [random.randint(0, 100) for _ in range(amount)]
 
 def mergeSort(numberList, left, right):
     
@@ -18,6 +20,9 @@ def mergeSort(numberList, left, right):
 
     # find the middle
     mid = (left + right) // 2
+
+    # // Animations
+    plt.bar(list(range(20)))
 
     # spilt recursively into left and right values
     mergeSort(numberList, left, mid)
