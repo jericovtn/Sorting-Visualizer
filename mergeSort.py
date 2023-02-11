@@ -10,7 +10,7 @@ random.seed('ABC')
 
 amount = 20
 
-numbers = [random.randint(0, 100) for _ in range(amount)]
+numbers = [random.randint(0, 1000) for _ in range(amount)]
 
 def mergeSort(numberList, left, right):
     
@@ -23,7 +23,7 @@ def mergeSort(numberList, left, right):
 
     # // Animations
     plt.bar(list(range(amount)), numberList)
-    plt.pause(0.01)
+    plt.pause(0.001)
     plt.clf()
 
     # spilt recursively into left and right values
@@ -32,7 +32,7 @@ def mergeSort(numberList, left, right):
 
     # // Animations
     plt.bar(list(range(amount)), numberList)
-    plt.pause(0.01)
+    plt.pause(0.001)
     plt.clf()
 
     # merge the two results
@@ -40,7 +40,7 @@ def mergeSort(numberList, left, right):
 
     # // Animations
     plt.bar(list(range(amount)), numberList)
-    plt.pause(0.01)
+    plt.pause(0.001)
     plt.clf()
 
 def merge(numberList, left, right, mid):
