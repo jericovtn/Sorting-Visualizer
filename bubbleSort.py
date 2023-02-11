@@ -5,7 +5,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-amount = 15
+amount = 20
 
 list = np.random.randint(0, 100, amount)
 x = np.arange(0, amount, 1)
@@ -18,7 +18,7 @@ for i in range(n):
         plt.bar(x, list)
         plt.pause(0.001)
         plt.clf()
-        if list[1] > list[j+1]:
+        if list[j] > list[j+1]:
             list[j], list[j+1] = list[j+1], list[j]
 
 plt.show()
