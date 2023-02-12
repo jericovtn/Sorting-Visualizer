@@ -5,7 +5,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-amount = 20
+amount = 50
 
 list = np.random.randint(0, 100, amount)
 x = np.arange(0, amount, 1)
